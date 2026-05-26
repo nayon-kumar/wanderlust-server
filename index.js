@@ -20,7 +20,7 @@ const client = new MongoClient(uri, {
   },
 });
 
-const JWKS = createRemoteJWKSet(new URL("http://localhost:3000/api/auth/jwks"));
+const JWKS = createRemoteJWKSet(new URL(process.env.JWKS_URL));
 
 const verifyToken = async (req, res, next) => {
   const authHeader = req.headers.authorization;
