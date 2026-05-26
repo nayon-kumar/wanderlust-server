@@ -57,4 +57,4 @@ Built with **Express.js**, **MongoDB**, and **JWT Authentication** to manage des
 
 This server uses **JWT authentication** with `jose-cjs`.
 
-Protected routes require an Authorization header
+Protected routes require an Authorization header.
