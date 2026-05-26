@@ -5,6 +5,12 @@ Built with **Express.js**, **MongoDB**, and **JWT Authentication** to manage des
 
 ---
 
+## 🌐 Live Server
+
+👉 https://wanderlust-server-sable.vercel.app/
+
+---
+
 ## 🚀 Features
 
 - RESTful API with Express.js
