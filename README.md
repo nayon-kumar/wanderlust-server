@@ -7,7 +7,7 @@ Built with **Express.js**, **MongoDB**, and **JWT Authentication** to manage des
 
 ## 🌐 Live Server
 
-👉 <a target="_blank" href=" https://wanderlust-server-sable.vercel.app/">https://wanderlust-server-sable.vercel.app/</a>
+👉 https://wanderlust-server-sable.vercel.app/
 
 ---
 
