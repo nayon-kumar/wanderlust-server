@@ -49,7 +49,16 @@ async function run() {
     const bookingsCollection = db.collection("bookings");
 
     app.get("/destination", async (req, res) => {
-      const result = await destinationCollection.find().toArray();
+      const search = req.query.search || "";
+      const query = search
+        ? {
+            $or: [
+              { destinationName: { $regex: search, $options: "i" } },
+              { country: { $regex: search, $options: "i" } },
+            ],
+          }
+        : {};
+      const result = await destinationCollection.find(query).toArray();
       res.json(result);
     });
 
